@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LingoAcademy - Kursus bahasa asing online dan offline dengan mentor berpengalaman.">
+  <title>LingoAcademy — Kuasai Bahasa Baru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="browser-frame">
+    <div class="browser-bar" aria-hidden="true"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="LingoAcademy Beranda">
+        <span class="brand-icon">🌐</span><span>LingoAcademy</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="#beranda">Beranda</a>
+        <a href="#program">Program Kursus</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#artikel">Artikel</a>
+        <button class="nav-cta" data-modal="register">Daftar Sekarang</button>
+        <button class="nav-login" data-modal="login">Masuk</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="beranda">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Belajar bahasa, buka dunia</span>
+          <h1>Kuasai Bahasa Baru,<br><span>Buka Peluang Global!</span></h1>
+          <p>Kursus bahasa asing interaktif secara online &amp; offline bersama mentor native speaker dan lokal yang berpengalaman. Kurikulum menyenangkan dan terstandarisasi internasional untuk semua usia!</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#program">Mulai Belajar <span>→</span></a>
+            <a class="btn btn-outline" href="#kontak">Hubungi Kami</a>
+          </div>
+          <div class="rating-row"><span class="stars" aria-label="5 bintang">★★★★★</span><strong>4.9/5</strong><span>(10.000+ Alumni)</span></div>
+          <div class="mini-proof"><span class="avatar-stack"><i>👩🏻</i><i>👨🏽</i><i>👩🏾</i></span><span><b>10.000+ pelajar</b> sudah mulai perjalanan mereka</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi pelajar dari berbagai negara">
+          <div class="floating-bubble bubble-hello">Hello!</div><div class="floating-bubble bubble-hola">Hola!</div>
+          <div class="floating-bubble bubble-jp">Konnichiwa!</div><div class="floating-bubble bubble-bon">Bonjour!</div>
+          <span class="float-icon book">📖</span><span class="float-icon pencil">✏️</span><span class="float-icon globe">🌍</span>
+          <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">✧</span>
+          <div class="people-scene">
+            <div class="person person-back"><div class="hair"></div><div class="face">🙂</div><div class="body yellow"></div><div class="book-prop">📘</div></div>
+            <div class="person person-right"><div class="hair dark"></div><div class="face">👨🏻‍💼</div><div class="body navy"></div><div class="tablet">▰</div></div>
+            <div class="person person-left"><div class="hair"></div><div class="face">👨🏻</div><div class="body coral"></div><div class="laptop">⌁</div></div>
+            <div class="person person-center"><div class="hair brown"></div><div class="face">👩🏻</div><div class="body teal"></div><div class="laptop silver">⌘</div></div>
+            <div class="person person-child"><div class="hair dark"></div><div class="face">👦🏻</div><div class="body blue"></div><div class="book-prop orange-book">📙</div></div>
+          </div>
+          <div class="ground-shadow"></div>
+          <div class="flag flag-uk">🇬🇧</div><div class="flag flag-kr">🇰🇷</div><div class="flag flag-de">🇩🇪</div>
+        </div>
+      </section>
+
+      <section class="languages section-wrap" id="program">
+        <div class="section-heading">
+          <div><span class="section-kicker">PILIH PERJALANANMU</span><h2>Pilihan Bahasa Terpopuler</h2></div>
+          <a href="#semua-program" class="text-link">Lihat semua program <span>→</span></a>
+        </div>
+        <div class="language-grid" id="languageGrid">
+          <button class="language-card" data-language="Inggris">
+            <span class="flag-emoji">🇬🇧</span><span class="language-info"><b>Bahasa<br>Inggris</b><small>General &amp; Academic English</small><span class="card-bottom"><em>Mulai dari</em><strong>Rp299rb <i>/bulan</i></strong></span></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="language-card" data-language="Jepang">
+            <span class="flag-emoji">🇯🇵</span><span class="language-info"><b>Bahasa<br>Jepang</b><small>JLPT Prep &amp; Percakapan</small><span class="card-bottom"><em>Mulai dari</em><strong>Rp329rb <i>/bulan</i></strong></span></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="language-card" data-language="Korea">
+            <span class="flag-emoji">🇰🇷</span><span class="language-info"><b>Bahasa<br>Korea</b><small>K-Wave &amp; TOPIK Prep</small><span class="card-bottom"><em>Mulai dari</em><strong>Rp329rb <i>/bulan</i></strong></span></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="language-card" data-language="Jerman">
+            <span class="flag-emoji">🇩🇪</span><span class="language-info"><b>Bahasa<br>Jerman</b><small>Studi &amp; Karier di Eropa</small><span class="card-bottom"><em>Mulai dari</em><strong>Rp349rb <i>/bulan</i></strong></span></span><span class="card-arrow">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="benefits section-wrap" id="fasilitas">
+        <div class="section-heading centered"><span class="section-kicker">KENAPA LINGOACADEMY?</span><h2>Belajar lebih mudah, hasil lebih nyata</h2><p>Semua yang kamu butuhkan untuk percaya diri berbicara bahasa baru.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><span class="benefit-icon teal-bg">🎯</span><h3>Kurikulum terarah</h3><p>Materi bertahap sesuai level dan target belajarmu.</p></article>
+          <article class="benefit-card"><span class="benefit-icon orange-bg">🧑‍🏫</span><h3>Mentor berpengalaman</h3><p>Belajar langsung bersama mentor lokal dan native speaker.</p></article>
+          <article class="benefit-card"><span class="benefit-icon purple-bg">💬</span><h3>Praktik interaktif</h3><p>Latihan percakapan, kuis, dan sesi kelompok kecil.</p></article>
+          <article class="benefit-card"><span class="benefit-icon yellow-bg">🏅</span><h3>Sertifikat kelulusan</h3><p>Rayakan progresmu dengan sertifikat setelah menyelesaikan level.</p></article>
+        </div>
+      </section>
+
+      <section class="promo section-wrap" id="tentang">
+        <div><span class="section-kicker">LANGKAH PERTAMAMU DIMULAI DI SINI</span><h2>Bahasa baru. Pengalaman baru.<br><span>Masa depan lebih luas.</span></h2><p>Temukan kelas yang cocok dan mulai belajar bersama komunitas yang suportif.</p></div>
+        <button class="btn btn-light" data-modal="register">Pilih Kelas Saya <span>→</span></button>
+      </section>
+
+      <section class="articles section-wrap" id="artikel">
+        <div class="section-heading"><div><span class="section-kicker">JURNAL BELAJAR</span><h2>Tips untuk perjalanan bahasamu</h2></div><a href="#kontak" class="text-link">Tanya mentor <span>→</span></a></div>
+        <div class="article-grid">
+          <article class="article-card"><div class="article-visual visual-one">🗣️</div><div class="article-content"><span>Tips belajar · 5 menit baca</span><h3>5 cara membangun kebiasaan belajar bahasa setiap hari</h3><a href="#" class="read-more" data-article="Konsistensi lebih penting daripada durasi panjang. Mulai dari 10–15 menit per hari, gunakan kosakata baru dalam kalimat, dengarkan audio pendek, dan catat progresmu.">Baca artikel →</a></div></article>
+          <article class="article-card"><div class="article-visual visual-two">✈️</div><div class="article-content"><span>Persiapan karier · 4 menit baca</span><h3>Bahasa asing yang bisa membuka peluang karier global</h3><a href="#" class="read-more" data-article="Bahasa yang tepat bergantung pada tujuanmu. Bahasa Inggris berguna lintas industri, Jepang dan Korea dapat mendukung peluang di perusahaan terkait, sementara Jerman sering relevan untuk studi dan karier di negara berbahasa Jerman.">Baca artikel →</a></div></article>
+          <article class="article-card"><div class="article-visual visual-three">📚</div><div class="article-content"><span>Belajar efektif · 6 menit baca</span><h3>Belajar untuk ujian JLPT: mulai dari mana?</h3><a href="#" class="read-more" data-article="Untuk pemula, mulai dari hiragana dan katakana, lanjutkan kosakata dan tata bahasa dasar, lalu latih kemampuan menyimak. Gunakan latihan soal secara rutin dan evaluasi bagian yang masih sulit.">Baca artikel →</a></div></article>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="kontak">
+        <div><span class="section-kicker">KAMI SIAP MEMBANTU</span><h2>Masih bingung pilih kelas?</h2><p>Ceritakan tujuanmu. Tim kami akan membantu menemukan program yang sesuai.</p></div>
+        <form id="contactForm" class="contact-form"><label for="contactName">Nama kamu</label><input id="contactName" name="name" placeholder="Masukkan nama" required><label for="contactEmail">Email atau WhatsApp</label><input id="contactEmail" name="contact" placeholder="Contoh: nama@email.com" required><button class="btn btn-primary" type="submit">Kirim pertanyaan <span>→</span></button><p class="form-note" id="contactMessage" aria-live="polite"></p></form>
+      </section>
+    </main>
+
+    <footer class="footer"><a class="brand" href="#beranda"><span class="brand-icon">🌐</span><span>LingoAcademy</span></a><p>Belajar bahasa, buka peluang tanpa batas.</p><div class="footer-links"><a href="#program">Program</a><a href="#fasilitas">Fasilitas</a><a href="#kontak">Kontak</a></div><small>© <span id="year"></span> LingoAcademy. Demo website.</small></footer>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Tutup dialog">×</button>
+      <div class="modal-logo">🌐</div><span class="section-kicker">LINGOACADEMY</span><h2 id="modalTitle">Mulai perjalanan bahasamu</h2><p id="modalDescription">Isi data berikut dan tim kami akan menghubungimu.</p>
+      <form id="accountForm">
+        <label for="fullName">Nama lengkap</label><input id="fullName" name="fullName" placeholder="Nama lengkap kamu" required>
+        <label for="email">Email</label><input id="email" name="email" type="email" placeholder="nama@email.com" required>
+        <label for="languageSelect">Bahasa yang diminati</label><select id="languageSelect" name="language"><option>Bahasa Inggris</option><option>Bahasa Jepang</option><option>Bahasa Korea</option><option>Bahasa Jerman</option></select>
+        <button class="btn btn-primary modal-submit" id="accountSubmit" type="submit">Daftar Sekarang <span>→</span></button>
+        <p class="form-note" id="accountMessage" aria-live="polite"></p>
+      </form>
+      <p class="modal-switch" id="modalSwitch">Sudah punya akun? <button type="button" data-modal="login">Masuk</button></p>
+      <small class="demo-note">Form ini demo frontend; belum terhubung ke server/database.</small>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
